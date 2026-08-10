@@ -1,9 +1,9 @@
 /**
- * RSVP -> Google Sheet connector for the Naadham & Rishi wedding site.
+ * RSVP -> Google Sheet connector for the Rishi & Naadham wedding site.
  *
  * SETUP (do this while signed in to nadham23bijirajesh9720@gmail.com):
  * 1. Go to https://sheets.google.com and create a new spreadsheet.
- *    Rename it "Naadham & Rishi RSVPs" (or anything you like).
+ *    Rename it "Rishi & Naadham RSVPs" (or anything you like).
  * 2. In the sheet, add this header row in row 1:
  *    Timestamp | Name | Phone | Attending | Guests | Message
  * 3. Open Extensions -> Apps Script. Delete any starter code and paste
@@ -56,7 +56,7 @@ function doPost(e) {
 function sendNotificationEmail(data) {
   var subject = 'New RSVP: ' + (data.name || 'Someone') + ' — ' + (data.attending || '');
   var body =
-    'A new RSVP came in for Naadham & Rishi\'s wedding.\n\n' +
+    'A new RSVP came in for Rishi & Naadham\'s wedding.\n\n' +
     'Name: ' + (data.name || '-') + '\n' +
     'Phone: ' + (data.phone || '-') + '\n' +
     'Attending: ' + (data.attending || '-') + '\n' +

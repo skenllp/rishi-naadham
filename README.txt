@@ -1,4 +1,4 @@
-NAADHAM & RISHI — WEDDING WEBSITE
+RISHI & NAADHAM — WEDDING WEBSITE
 ==================================
 
 WHAT'S INSIDE
